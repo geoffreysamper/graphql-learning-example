@@ -38,11 +38,10 @@ const resolvers = {
   },
 
   Article: {
-  /*  section: (parent, args, context, info) => {
+   section: (parent, args, context, info) => {
       console.info("Article.section  ", parent.sectionId)
       return context.sections.find(parent.sectionId)
     },
-*/
     tags: (parent, args, context, info) => {
       console.info("Article.tag  ", parent.tagIds.join(','))
       return context.tags.findMany(parent.tagIds)
